@@ -1,0 +1,9 @@
+pm4py==1.2.10
+multiset==2.1.1
+numpy>=1.18.2
+pyemd==0.5.1
+pyfpgrowth==1.0
+numpy>=1.18.2
+python_Levenshtein>=0.12.0
+p-privacy-qt == 0.0.10
+

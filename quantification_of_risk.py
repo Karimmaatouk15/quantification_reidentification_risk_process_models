@@ -14,8 +14,8 @@ if __name__ == '__main__':
     time_accuracy = "original"
     life_cycle = ['complete', '', 'COMPLETE']
     all_life_cycle = True
-    bk_type = 'set'  # set,multiset,sequence
-    bk_length = 5
+    bk_type = 'set'  # Type of Background Knowledge: set,multiset,sequence
+    bk_length = 5    # Maximum Background Knowledge Power Size
     multiprocess = True
     mp_technique = 'pool'
     sms = SMS()
@@ -50,8 +50,5 @@ if __name__ == '__main__':
             dictionary["uniq_matched_" + column_name].append(len(uniq_matched_cases))
             values.append(cd)
             values.append(td)
-            print("%s ---len %d---cd %0.3f---td %0.3f---ad %0.3f---%d" % (
-                bk_type, x, cd, td, ad, len(uniq_matched_cases)))
-            print("done")
     df = pd.DataFrame(dictionary)
     df.to_csv('./Results/LogName_Sequence.csv')

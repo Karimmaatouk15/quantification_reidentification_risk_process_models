@@ -18,3 +18,5 @@ python_Levenshtein>=0.12.0
 p-privacy-qt == 0.0.10
 ```
 
+## References
+Parts of the code in *quantification_of_risk.py* were adapted from https://github.com/m4jidRafiei/privacy_quantification
